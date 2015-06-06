@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>Sannu Login</title>
+    
+        
+        <link rel="stylesheet" href="css/style.css">
+              <link rel="stylesheet" href="offline-language-english-indicator.css">
+              <link rel="stylesheet" href="offline-language-english.css">
+              <link rel="stylesheet" href="offline-theme-dark-indicator.css">
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
+  </head>
+
+  <body>
+      <script type="text/javascript">       
+Parse.initialize("BxpmhxAQvxw8LuDnxPgD2tLtB57FxiUTXIiL69gg", "llZbhIRYYUY31G9Jwo9ECnlayI5SVjh8mxltobpo");
+
+</script>
+
+    <div class="wrapper">
+	<div class="container">
+		<h1>Welcome to Sannu.</h1>
+        <br>
+		<form class="form">
+			<input type="text" placeholder="Username" id="name">
+            <input type="email" placeholder="Email" id="email">
+			<input type="password" placeholder="Password" id="password">
+            
+			<button id="login-button" onclick="sendUserData()">Login</button>
+		</form>
+	</div>
+	
+      <script type="text/javascript"> 
+          
+      function sendUserData(){
+          console.log("called");
+
+          var user = new Parse.User();
+          user.set("username",document.getElementById('name').value );
+          user.set("password",document.getElementById('password').value );
+          user.set("email",document.getElementById('email').value );
+    
+          user.signUp(null, {
+            success: function(user) {
+                console.log("success");
+                //SHOW USER PROFILE 
+                window.open("UserProfile/index.html"); 
+    // Hooray! Let them use the app now.
+        },
+            error: function(user, error) {
+    // Show the error message somewhere and let the user try again.
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
+      }
+      </script>
+	
+    <ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li> 
+		<li></li>
+		<li></li>
+		<li></li>
+        
+	</ul>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
