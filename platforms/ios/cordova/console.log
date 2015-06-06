@@ -15,3 +15,31 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-06-02 20:13:50.798 ehealthApp[4762:69625] Communications error: <OS_xpc_error: <error: 0x2d485f4> { count = 1, contents =
 	"XPCErrorDescription" => <string: 0x2d4883c> { length = 22, contents = "Connection interrupted" }
 }>
+2015-06-06 15:13:04.877 ehealthApp[7755:821366] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/manu/Library/Developer/CoreSimulator/Devices/88266FD1-C16D-4944-B2EA-811FB15BC729/data/Containers/Data/Application/D0389097-8654-4FC2-941A-3AD3AE366138/Library/Cookies/Cookies.binarycookies
+2015-06-06 15:13:05.221 ehealthApp[7755:821366] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-06 15:13:05.222 ehealthApp[7755:821366] Multi-tasking -> Device: YES, App: YES
+2015-06-06 15:13:05.241 ehealthApp[7755:821366] Unlimited access to network resources
+2015-06-06 15:13:05.255 ehealthApp[7755:821366] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-06 15:13:05.996 ehealthApp[7755:821366] Resetting plugins due to page load.
+2015-06-06 15:13:06.417 ehealthApp[7755:821366] Finished load of: file:///Users/manu/Library/Developer/CoreSimulator/Devices/88266FD1-C16D-4944-B2EA-811FB15BC729/data/Containers/Bundle/Application/0D34723C-B411-4B97-B413-B8930D76CD35/ehealthApp.app/www/index.html
+2015-06-06 15:26:00.332 ehealthApp[11642:839703] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/manu/Library/Developer/CoreSimulator/Devices/88266FD1-C16D-4944-B2EA-811FB15BC729/data/Containers/Data/Application/BCF8D161-4E87-4392-A480-126C164C165E/Library/Cookies/Cookies.binarycookies
+2015-06-06 15:26:00.481 ehealthApp[11642:839703] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-06 15:26:00.481 ehealthApp[11642:839703] Multi-tasking -> Device: YES, App: YES
+2015-06-06 15:26:00.483 ehealthApp[11642:839703] Unlimited access to network resources
+2015-06-06 15:26:00.487 ehealthApp[11642:839703] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-06 15:26:00.769 ehealthApp[11642:839703] Resetting plugins due to page load.
+2015-06-06 15:26:01.019 ehealthApp[11642:839703] Finished load of: file:///Users/manu/Library/Developer/CoreSimulator/Devices/88266FD1-C16D-4944-B2EA-811FB15BC729/data/Containers/Bundle/Application/0EFF7A51-C068-45A2-9A1D-7E75797DA5D4/ehealthApp.app/www/index.html
