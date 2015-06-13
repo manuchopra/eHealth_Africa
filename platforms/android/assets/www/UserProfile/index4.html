@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Line Chart</title>
+		<script src="Chart.js"></script>
+                        <!-- FONTS -->
+                <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+                    
+                <!-- STYLES -->
+                <link href="please-wait.css" rel="stylesheet">
+                <link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+                <link rel="stylesheet" type="text/css" href="css/normalize.css">
+                <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+                <link rel="stylesheet" type="text/css" href="css/animate.css">
+                <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome/css/font-awesome.min.css">
+                <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
+                <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+                <link rel="stylesheet" type="text/css" href="js/google-code-prettify/prettify.css">
+                <link rel="stylesheet" type="text/css" href="css/uniform.default.css">
+                <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+                <link rel="stylesheet" type="text/css" href="js/mediaelement/mediaelementplayer.css">
+                <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
+                <link rel="stylesheet" type="text/css" href="css/style.css">
+
+                <link rel="stylesheet" type="text/css" href="css/main.css">
+                <link rel="stylesheet" type="text/css" href="css/skins/flat.css">
+
+	</head>
+	<body>
+        
+                        <div class="container" id="container">
+                    
+                    <!-- HEADER -->
+                    
+                    <header class="header">    
+                        
+                        <h2> <FONT color="black" > Manu Chopra's Leaderboard </FONT> </h2>
+
+		<div>
+			<div>
+				<canvas id="canvas" height="80%" width="100%"></canvas>
+			</div>
+		</div>
+
+
+	<script>
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					label: "Average Health Worker",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [50,55,60,65,77,80,100]
+				},
+				{
+					label: "You",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [70,72,70,80,100,120,130]
+				}
+			]
+
+		}
+        
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true,
+            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+
+		});
+	}
+
+
+	</script>
+                        
+                        </div>
+                            
+                            <div class="alert success">
+                                    <strong>Hey there:</strong> You are way better than the average health worker, in fact you are in the <b> top 10% of the health workers </b> of your district. Good job! 
+                            </div>
+
+                            
+                            </header> 
+                            
+	</body>
+            <script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery.address-1.5.min.js"></script>
+        <script src="js/triple.layout.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/nprogress/nprogress.js"></script>
+        <script src="js/fastclick.js"></script>
+		<script src="js/jquery.imagesloaded.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+        <script src="js/jquery.tooltipster.min.js"></script>
+        <script src="js/google-code-prettify/prettify.js"></script>
+        <script src="js/twitterFetcher_v10_min.js"></script>
+        <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+</html>
