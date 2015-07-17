@@ -1,5 +1,5 @@
 # eHealth_Africa
-Made as a part of EE 46 to make healthcare more social in Kano, Nigeria. 
+Made as a part of "EE 46: Engineering for Good" to make healthcare more social in Kano, Nigeria. 
 
 Our initial prototype awards points for quantifiable tasks completed by healthcare workers, such as arriving to work on time and checking in, restocking medical supplies, and answering the “Question of the Day”. Receiving these points requires only to press buttons on the Homepage, directly under the Score.
 
